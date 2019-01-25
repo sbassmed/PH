@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   #muestra el prodcuto del id seleccionado
   get '/products/:id/edit', to: 'products#edit'
   #ruta para editar producto
+  patch '/products/:id', to: 'products#update'
+  #ruta para modificar el producto para almacenar en la DB 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
